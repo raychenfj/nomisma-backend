@@ -1,5 +1,7 @@
-# Nomisma Backend Code Challenge
+# Nomisma Backend Code Challenge 
 > repo for nomisma backend code challenge
+
+[![Build Status](https://travis-ci.org/raychenfj/nomisma-backend.svg?branch=master)](https://travis-ci.org/raychenfj/nomisma-backend)
 
 ## Overview
 
