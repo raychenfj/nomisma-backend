@@ -32,9 +32,12 @@ const defaultOptions = {
     fs.writeFileSync(path.resolve(__dirname, './tasks.json'), JSON.stringify({ tasks }))
   },
   restore () { // restore the tasks from your backup
-    const object = JSON.parse(fs.readFileSync(path.resolve(__dirname, './tasks.json')))
-    if (object && object.tasks) {
-      return object.tasks
+    try {
+      const object = JSON.parse(fs.readFileSync(path.resolve(__dirname, './tasks.json')))
+      if (object && object.tasks) {
+        return object.tasks
+      }
+    } catch (e) {
     }
     return []
   }
