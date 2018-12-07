@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
+RUN touch /app/schedule/tasks.json
 RUN npm install --only=production
 
 COPY . .
