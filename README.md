@@ -75,13 +75,11 @@ npm run test
 ```
 
 ## Run
-```bash
-# run in development env
-npm run start:dev
+1. Rename `config.example.js` to `config.js`
 
-# run in production env
-npm run start:production
-```
+2. Fill api keys for both development and production env in `config.js`( get your api keys here [SendGrid](https://sendgrid.com/) and [SparkPost](https://www.sparkpost.com/) )
+
+3. Then run `npm run start:dev/prod` for development/production env
 
 ## Deploy with Docker
 ```bash
