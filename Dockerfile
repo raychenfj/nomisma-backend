@@ -5,10 +5,11 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN echo > /app/schedule/tasks.json
 RUN npm install --only=production
 
 COPY . .
+
+RUN echo > /app/schedule/tasks.json
 
 EXPOSE 3000
 
