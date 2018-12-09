@@ -61,9 +61,9 @@ input:
 
 ```js
 body: {
-	"to": "example@example.com",
-	"content": "hello world",
-	"subject": "hello world",
+	"to": "example@example.com", // recipient's emaild
+	"content": "hello world", // email content
+	"subject": "hello world", // email subject
 	"timestamp": 1544111630082, // unix timestamp
 }
 ```
