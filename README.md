@@ -57,6 +57,17 @@ url: /api/v1/tasks
 
 method: POST
 
+input:
+
+```js
+body: {
+	"to": "example@example.com",
+	"content": "hello world",
+	"subject": "hello world",
+	"timestamp": 1544111630082, // unix timestamp
+}
+```
+
 output:
 
 will send `schedule task successfully` when success
